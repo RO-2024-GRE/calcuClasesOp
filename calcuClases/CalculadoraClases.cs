@@ -12,9 +12,11 @@ namespace calcuClases
 {
     public partial class CalculadoraClases : Form
     {
-        double primero;
-        double segundo;
-        string operador;
+       
+        private Clases.calculo calculo = new Clases.calculo();
+        private double primero;
+        private double segundo;
+        private string operador;
 
 
         public CalculadoraClases()
@@ -22,10 +24,7 @@ namespace calcuClases
             InitializeComponent();
         }
 
-        ClasesOp.ClsSuma obj = new ClasesOp.ClsSuma();
-        ClasesOp.ClsResta obj2 = new ClasesOp.ClsResta();
-        ClasesOp.ClsMultiplicacion obj3 = new ClasesOp.ClsMultiplicacion();
-        ClasesOp.ClsDivision obj4 = new ClasesOp.ClsDivision();
+      
 
 
 
@@ -117,39 +116,18 @@ namespace calcuClases
         private void btIgual_Click(object sender, EventArgs e)
         {
             segundo = double.Parse(txtPantalla.Text);
-            double Sum;
+          
             double Res;
-            double Mult;
-            double Div;
-
-            switch (operador)
-            {
-                case "+":
-                    Sum = obj.Sumar((primero), (segundo));
-                    txtPantalla.Text = Sum.ToString();
-                    break;
-
-                case "-":
-                    Res = obj2.Restar((primero), (segundo));
-                    txtPantalla.Text = Res.ToString();
-                    break;
-                case "*":
-                    Mult = obj3.Multiplicar((primero), (segundo));
-                    txtPantalla.Text = Mult.ToString();
-                    break;
-                case "/":
-                    Div = obj4.Dividir((primero), (segundo));
-                    txtPantalla.Text = Div.ToString();
-                    break;
-
-
-
-            }
-
-
-
+            Res = calculo.Calcular(operador, primero, segundo);
+            txtPantalla.Text = Res.ToString();
 
         }
+
+
+
+
+
+
 
         private void btCE_Click(object sender, EventArgs e)
         {

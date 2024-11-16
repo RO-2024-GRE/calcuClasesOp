@@ -33,7 +33,7 @@
             this.btIgual = new System.Windows.Forms.Button();
             this.btTres = new System.Windows.Forms.Button();
             this.Bt6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.borr = new System.Windows.Forms.Button();
             this.btCinco = new System.Windows.Forms.Button();
             this.btCuatro = new System.Windows.Forms.Button();
             this.btMultiplicacion = new System.Windows.Forms.Button();
@@ -104,16 +104,16 @@
             this.Bt6.UseVisualStyleBackColor = true;
             this.Bt6.Click += new System.EventHandler(this.Bt6_Click_1);
             // 
-            // button5
+            // borr
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(180, 226);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(50, 50);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "<-\r\n";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.borr.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.borr.Location = new System.Drawing.Point(180, 226);
+            this.borr.Name = "borr";
+            this.borr.Size = new System.Drawing.Size(50, 50);
+            this.borr.TabIndex = 6;
+            this.borr.Text = "<-\r\n";
+            this.borr.UseVisualStyleBackColor = true;
+            this.borr.Click += new System.EventHandler(this.button5_Click);
             // 
             // btCinco
             // 
@@ -277,7 +277,7 @@
             this.Controls.Add(this.btOcho);
             this.Controls.Add(this.btSiete);
             this.Controls.Add(this.Bt6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.borr);
             this.Controls.Add(this.btCinco);
             this.Controls.Add(this.btCuatro);
             this.Controls.Add(this.btTres);
@@ -285,7 +285,7 @@
             this.Controls.Add(this.btDos);
             this.Controls.Add(this.bt1);
             this.Name = "CalculadoraClases";
-            this.Text = "Form1";
+            this.Text = "o|||||||||||||||||||||||||||";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -299,7 +299,7 @@
         private System.Windows.Forms.Button btIgual;
         private System.Windows.Forms.Button btTres;
         private System.Windows.Forms.Button Bt6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button borr;
         private System.Windows.Forms.Button btCinco;
         private System.Windows.Forms.Button btCuatro;
         private System.Windows.Forms.Button btMultiplicacion;

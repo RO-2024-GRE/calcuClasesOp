@@ -46,10 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\ClsDivision.cs" />
-    <Compile Include="Clases\ClsMultiplicacion.cs" />
-    <Compile Include="Clases\ClsResta.cs" />
-    <Compile Include="Clases\ClsSuma.cs" />
+    <Compile Include="Clases\calculo.cs" />
     <Compile Include="CalculadoraClases.cs">
       <SubType>Form</SubType>
     </Compile>
