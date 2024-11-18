@@ -47,6 +47,8 @@
             this.txtPantalla = new System.Windows.Forms.TextBox();
             this.btPunto = new System.Windows.Forms.Button();
             this.btCero = new System.Windows.Forms.Button();
+            this.DVG = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DVG)).BeginInit();
             this.SuspendLayout();
             // 
             // bt1
@@ -260,11 +262,20 @@
             this.btCero.UseVisualStyleBackColor = true;
             this.btCero.Click += new System.EventHandler(this.btCero_Click);
             // 
+            // DVG
+            // 
+            this.DVG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DVG.Location = new System.Drawing.Point(255, 18);
+            this.DVG.Name = "DVG";
+            this.DVG.Size = new System.Drawing.Size(388, 150);
+            this.DVG.TabIndex = 21;
+            // 
             // CalculadoraClases
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(380, 450);
+            this.ClientSize = new System.Drawing.Size(666, 450);
+            this.Controls.Add(this.DVG);
             this.Controls.Add(this.btPunto);
             this.Controls.Add(this.btCero);
             this.Controls.Add(this.txtPantalla);
@@ -287,6 +298,7 @@
             this.Name = "CalculadoraClases";
             this.Text = "o|||||||||||||||||||||||||||";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DVG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -313,6 +325,7 @@
         private System.Windows.Forms.TextBox txtPantalla;
         private System.Windows.Forms.Button btPunto;
         private System.Windows.Forms.Button btCero;
+        private System.Windows.Forms.DataGridView DVG;
     }
 }
 

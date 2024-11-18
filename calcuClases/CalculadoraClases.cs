@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BA;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,11 +18,14 @@ namespace calcuClases
         private double primero;
         private double segundo;
         private string operador;
+        private listaHistorial listaHist = new listaHistorial();
+        
 
 
         public CalculadoraClases()
         {
             InitializeComponent();
+            DVG.DataSource = listaHist.Lista;
         }
 
       
@@ -113,13 +117,17 @@ namespace calcuClases
             txtPantalla.Clear();
         }
 
-        private void btIgual_Click(object sender, EventArgs e)
+        private void btIgual_Click( object sender, EventArgs e)
         {
             segundo = double.Parse(txtPantalla.Text);
           
             double Res;
             Res = calculo.Calcular(operador, primero, segundo);
             txtPantalla.Text = Res.ToString();
+            string operacion = primero.ToString() + operador + segundo.ToString();
+
+            Historial histo = new Historial(operacion, Res.ToString ());
+            listaHist.Incertar(histo);
 
         }
 
